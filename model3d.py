@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-
 import pygame
 import time
 import sys
-import numpy as np 
+import numpy as np
 
 pantalla_x= 1200
 pantalla_y= 800
@@ -31,9 +30,8 @@ colorfondo=pygame.Color(0,0,0)
 rojo=pygame.Color(255,0,0)
 amarillo=pygame.Color(255,255,0)
 azul=pygame.Color(0,0,255)
+verde=pygame.Color(0, 255, 0)
 blanco=pygame.Color(255,255,200)
-cyan=pygame.Color(0,255,255)
-magenta=pygame.Color(255,0,255)
 
 vi=np.array([1,0,0])
 vj=np.array([0,1,0])
@@ -53,7 +51,7 @@ while True:
 
     c=np.array([800,3000,500])
     rd=1000
-    
+
     v1=c+d+rd*(vi+vj+vk)
     v2=c+d+rd*(vi+vj-vk)
     v3=c+d+rd*(vi-vj+vk)
@@ -65,32 +63,32 @@ while True:
 
     window.fill(colorfondo)
 
-    pygame.draw.line(window, cyan, pv(v1,ob),pv(v2,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v3,ob),pv(v4,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v5,ob),pv(v6,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v7,ob),pv(v8,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v1,ob),pv(v5,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v3,ob),pv(v7,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v1,ob),pv(v3,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v5,ob),pv(v7,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v2,ob),pv(v6,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v4,ob),pv(v8,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v2,ob),pv(v4,ob),width=2)
-    pygame.draw.line(window, cyan, pv(v6,ob),pv(v8,ob),width=2)
-    
-    pygame.draw.line(window, amarillo, pv(v1,obd),pv(v2,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v3,obd),pv(v4,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v5,obd),pv(v6,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v7,obd),pv(v8,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v1,obd),pv(v5,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v3,obd),pv(v7,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v1,obd),pv(v3,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v5,obd),pv(v7,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v2,obd),pv(v6,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v4,obd),pv(v8,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v2,obd),pv(v4,obd),width=2)
-    pygame.draw.line(window, amarillo, pv(v6,obd),pv(v8,obd),width=2)
-    
+    pygame.draw.line(window, rojo, pv(v1,ob),pv(v2,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v3,ob),pv(v4,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v5,ob),pv(v6,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v7,ob),pv(v8,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v1,ob),pv(v5,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v3,ob),pv(v7,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v1,ob),pv(v3,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v5,ob),pv(v7,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v2,ob),pv(v6,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v4,ob),pv(v8,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v2,ob),pv(v4,ob),width=2)
+    pygame.draw.line(window, rojo, pv(v6,ob),pv(v8,ob),width=2)
+
+    pygame.draw.line(window, azul, pv(v1,obd),pv(v2,obd),width=2)
+    pygame.draw.line(window, azul, pv(v3,obd),pv(v4,obd),width=2)
+    pygame.draw.line(window, azul, pv(v5,obd),pv(v6,obd),width=2)
+    pygame.draw.line(window, azul, pv(v7,obd),pv(v8,obd),width=2)
+    pygame.draw.line(window, azul, pv(v1,obd),pv(v5,obd),width=2)
+    pygame.draw.line(window, azul, pv(v3,obd),pv(v7,obd),width=2)
+    pygame.draw.line(window, azul, pv(v1,obd),pv(v3,obd),width=2)
+    pygame.draw.line(window, azul, pv(v5,obd),pv(v7,obd),width=2)
+    pygame.draw.line(window, azul, pv(v2,obd),pv(v6,obd),width=2)
+    pygame.draw.line(window, azul, pv(v4,obd),pv(v8,obd),width=2)
+    pygame.draw.line(window, azul, pv(v2,obd),pv(v4,obd),width=2)
+    pygame.draw.line(window, azul, pv(v6,obd),pv(v8,obd),width=2)
+
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -133,4 +131,5 @@ while True:
 
     pygame.display.flip()
     fps_controller.tick(25)
+
 
